@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>dread</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#8C77EC">
+
+	<meta property="title" content="dread" />
+	<meta property="description" content="digitalscumbag@pm.me" />
+	<meta property="og:image" content="favicon.png" />
+
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+	<script type="text/javascript" src="/assets/js/sweetalert2.js"></script>
+
+	<link rel="stylesheet" href="/assets/css/sweetalerts.min.css">
+	<link rel="stylesheet" href="/assets/css/main.css">
+<script type="text/javascript"> 
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+</script>
+</head>
+<body>
+	<div class="container">
+		<h1>
+			<div class="main-text">dread</div>
+		</h1>
+
+		<ul class="list-inline social">
+                        <li class="list-inline-item">
+                                <a href="https://crime.gg/discord" target="_blank">
+                                        <img src="/assets/images/ui-login.png" title="sinaloa">
+                                </a>
+                        </li>
+			<li class="list-inline-item">
+				<a onclick="discord('dread#1337', '598519206690160682')" target="_blank">
+					<img src="/assets/images/discord.png" title="dread#1337">
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a onclick="bitcoin('Bitcoin', 'bc1qtk07nxcmzc5g96w53ualz4klxqldp2qnuucdw9')" target="_blank">
+					<img src="/assets/images/bitcoin.png" title="Bitcoin">
+				</a>
+			</li>
+                        <li class="list-inline-item">
+                                <a href="https://steamcommunity.com/id/DigitalScumbag" target="_blank">
+                                        <img src="/assets/images/steam.png" title="DigitalScumbag">
+                                </a>
+                        </li>
+                        <li class="list-inline-item">
+                                <a href="https://t.me/DigitalScumbag" target="_blank">
+                                        <img src="/assets/images/telegram.png" title="DigitalScumbag">
+                                </a>
+                        </li>
+                        <li class="list-inline-item">
+                                <a href="https://twitter.com/CXdread" target="_blank">
+                                        <img src="/assets/images/twitter.png" title="CXdread">
+				</a>
+			</li>
+                        <li class="list-inline-item">
+                                <a href="https://instagram.com/digital.scumbag" target="_blank">
+                                        <img src="/assets/images/instagram.png" title="digital.scumbag">
+                                </a>
+                        </li>
+		</ul>
+          <span style="opacity: 60%; font-family: verdana; font-size: 75%; color: #fff;"><i>"Uneasy lies the head that wears a crown."</i></span>
+	</div>
+
+	<script type="text/javascript" src="/assets/js/animate.js"></script>
+	<script type="text/javascript" src="/assets/js/title.js"></script>
+
+	<script type="text/javascript">
+		function discord(username, userId) {
+			Swal.fire({
+				title: username,
+				html: `User ID: ${userId}`,
+				imageUrl: "/assets/images/discord.png",
+				imageWidth: 156, imageHeight: 156,
+				imageAlt: "Discord", timer: 10000,
+				timerProgressBar: true
+			});
+		}
+	</script>
+
+        <script type="text/javascript">
+                function bitcoin(username, btc) {
+                        Swal.fire({
+                                title: username,
+                                html: `${btc}`,
+                                imageUrl: "/assets/images/bitcoin.png",
+                                imageWidth: 156, imageHeight: 156,
+                                imageAlt: "Bitcoin", timer: 10000,
+                                timerProgressBar: true
+                        });
+                }
+        </script>
+<div id="player">
+    <audio autoplay hidden>
+     <source src="mortum.mp3" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+    </audio>
+</div>
+</body>
+</html>
